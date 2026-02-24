@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          © 2024 Stock Fiber - Todos los derechos reservados
+          © 2025 Mi Tienda - Todos los derechos reservados
         </p>
         <div className="footer-powered">
           <span>Powered by</span>
