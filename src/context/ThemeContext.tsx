@@ -12,7 +12,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [tema, setTema] = useState<Theme>('light')
+  const [tema, setTema] = useState<Theme>('dark')
 
   // Cargar tema guardado cuando el componente se monta
   useEffect(() => {
