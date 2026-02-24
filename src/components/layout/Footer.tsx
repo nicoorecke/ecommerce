@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-powered">
           <span>Powered by</span>
           <img 
-            src="/abarcat.svg" 
+            src="/Abarcat.svg" 
             alt="Abarcat" 
             className="footer-logo"
           />
