@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '@/src/components/layout/Header'
 import Footer from '@/src/components/layout/Footer'
+import WhatsAppButton from '@/src/components/WhatsAppButton'
 import { Providers } from '@/src/components/layout/Providers'
 
 export default function RootLayout({
@@ -17,6 +18,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>
