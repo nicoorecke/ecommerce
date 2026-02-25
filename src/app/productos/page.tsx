@@ -1,14 +1,16 @@
 'use client'
 
-import { productos, Producto } from '@/src/components/productos'
+import { productos } from '@/src/components/productos'
 import { useCarrito } from '@/src/context/CarritoContext'
+import { useToast } from '@/src/context/ToastContext'  // ← Agregar
 
 export default function ProductosPage() {
   const { agregarAlCarrito } = useCarrito()
+  const { mostrarToast } = useToast()  // ← Agregar
 
-  const handleAgregar = (producto: Producto) => {
+  const handleAgregar = (producto: any) => {
     agregarAlCarrito(producto)
-    alert(`${producto.modelo} agregado al carrito!`)
+    mostrarToast(`${producto.modelo} agregado al carrito ✓`)  // ← Cambiar
   }
 
   return (
